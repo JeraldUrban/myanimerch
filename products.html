@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Jerald Urban">
+        <meta name="keywords" content="Final_Project_Urban">
+        <meta name="viewport" content="width=device-width, initial-scale 1.0">
+        <title>Final_Project_Urban</title>
+        <link rel="stylesheet" type="text/css" href="../styles/Final_Project_Urban.css">
+        <!---------- References for images used: Google images ---------->
+        <!---------- Reference: Google Fonts ---------->
+        <link rel="preconnect" href="https://fonts.googleapis.com"> <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,300&display=swap" rel="stylesheet">
+        <!---------- Reference: fontawesome---------->
+        <script src="https://kit.fontawesome.com/44f557ccce.js"></script>
+    </head>
+    <body>
+
+        <!---------- Header ---------->
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="./Index.html">
+                        <img src="../src/Logo.jpg" width="125px"></a>
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li>
+                            <a href="./Index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="./products.html">Products</a>
+                        </li>
+                        <li>
+                            <a href="#about">About</a>
+                        </li>
+                        <li>
+                            <a href="./LoginForm.html">Sign In?</a>
+                        </li>
+                    </ul>
+                </nav>
+                <a href="./Cart.html"><img src="../src/cart.jpg" width="30px" height="30px"></a>
+                <img src="../src/menu.png" class="menu-icon" onclick="menutoggle()">
+            </div>
+        </div>
+        <div class="small-container">
+            <div class="row row-2">
+                <h2>All Products</h2>
+                <select>
+                    <option>Default Sorting</option>
+                    <option>Sort By Price</option>
+                    <option>Sort By Popularity</option>
+                    <option>Sort By Rating</option>
+                    <option>Sort By Sale</option>
+                </select>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <a href="./product-details.html"><img src="../src/p1.jpg"></a>
+                    <a href="./product-details.html">
+                        <h4>Ahegao Face Hoodie 3D Print  Anime Hooded Jacket</h4>
+                    </a>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half"></i>
+                    </div>
+                    <p>₱1,381.10</p>
+                </div>
+                <div class="col-4">
+                    <img src="../src/p2.jpg">
+                    <h4>My Hero Academia Boku no Hero Academia  Stickers</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half"></i>
+                    </div>
+                    <p>₱15.00</p>
+                </div>
+                <div class="col-4">
+                    <img src="../src/p3.jpeg">
+                    <h4>Yuri is My Job! (Manga)</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>₱689.00</p>
+                </div>
+                <div class="col-4">
+                    <img src="../src/p4.jpeg">
+                    <h4>Anime Trend  High-top Sneakers</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <p>₱917.68</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-4">
+                    <img src="../src/l1.jpg">
+                    <h4>Jujutsu kaisen anime t shirt white tshirt
+                    </h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half"></i>
+                    </div>
+                    <p>₱85.00</p>
+                </div>
+                <div class="col-4">
+                    <img src="../src/l2.jpg">
+                    <h4>Anime Tartaglia Pillowcase Cool Male Genshin Impact
+                    </h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>₱728 - ₱1,513</p>
+                </div>
+                <div class="col-4">
+                    <img src="../src/l3.jpeg">
+                    <h4>Shadow Monarch - Solo Leveling Anime</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>₱611.67</p>
+                </div>
+                <div class="col-4">
+                    <img src="../src/l4.jpg">
+                    <h4>Anime Girl Figure Model 14CM Anime Figures</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <p>₱1,396</p>
+                </div>
+                <div class="col-4">
+                    <img src="../src/l5.jpg">
+                    <h4>EMILIA Nesoberi Anime Plush (Re:Zero)</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half"></i>
+                    </div>
+                    <p>₱1,298</p>
+                </div>
+                <div class="col-4">
+                    <img src="../src/l6.jpg">
+                    <h4>nime Keychain Charm Acrylic Bag Accessory Key Trinket</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half"></i>
+                    </div>
+                    <p>₱128</p>
+                </div>
+                <div class="col-4">
+                    <img src="../src/l7.jpg">
+                    <h4>New Haikyuu Anime Character High School Handbag</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>₱339</p>
+                </div>
+                <div class="col-4">
+                    <img src="../src/l8.jpg">
+                    <h4>XL Anime Kimetsu no Yaiba Pad Mouse
+                    </h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>₱1,734</p>
+                </div>
+            </div>
+            <div class="page-btn">
+                <span>1</span>
+                <span>2</span>
+                <span>3</span>
+                <span>4</span>
+                <span>&#x279D;</span>
+            </div>
+        </div>
+
+        <!---------- Footer ---------->
+        <div id="about" class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col-1">
+                        <h3>Download Our App</h3>
+                        <p>Download App for Android and ios mobile phone.</p>
+                        <div class="app-logo">
+                            <img src="../src/google.jpg">
+                            <img src="../src/apple.jpg">
+                        </div>
+                    </div>
+                    <div class="footer-col-2">
+                        <img src="../src/Logo.jpg">
+                        <p>Our purpose is to bring joy and excitement to fans of anime and anime culture by providing a unique retail experience with 100% officially licensed exclusive anime merchandise including clothing, apparel, accessories and more from the biggest names in anime.</p>
+                    </div>
+                    <div class="footer-col-3">
+                        <h3>Useful Links</h3>
+                        <ul>
+                            <li>Free Shipping Vouchers</li>
+                            <li>Blog Post</li>
+                            <li>Return Policy</li>
+                            <li>Join Us</li>
+                            <li>+63 12-3456-789</li>
+                        </ul>
+                    </div>
+                    <div class="footer-col-4">
+                        <h3>Follow Us</h3>
+                        <ul>
+                            <li>Facebook</li>
+                            <li>Twitter</li>
+                            <li>Instagram</li>
+                            <li>Tiktok</li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+                <p class="copyright">Copyright 2023 Developed by: Urban,Jerald</p>
+                <a href="./references.html"><p>References</p></a>
+            </div>
+        </div>
+
+        <!---------- JS for toggle menu ---------->
+        <script>
+            var MenuItems = document.getElementById("MenuItems");
+            MenuItems.style.maxHeight = "0px";
+            function menutoggle() {
+                if (MenuItems.style.maxHeight == "0px") {
+                    MenuItems.style.maxHeight = "200px";
+                } else {
+                    MenuItems.style.maxHeight = "0px";
+                }
+            }
+        </script>
+    </body>
+</html>
